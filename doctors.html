@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MediHome Project</title>
+    
+    
+            <!-- google font -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        
+        
+            <!-- font Awesome -->
+        
+            <script src="https://kit.fontawesome.com/ef424ee72d.js" crossorigin="anonymous"></script>
+    
+    
+            <!-- css file -->
+             <link rel="stylesheet" href="styles.css">
+        
+        
+            <!-- DaisyUI and tailwind link -->
+        
+            
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        
+        <!-- customaize code  -->
+        
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    primary: 'rgb(139, 195, 74)',
+                    secondary: 'rgb(17, 17, 17)',
+                    body: 'rgb(248, 246, 243)',
+                    accent: 'rgb(106, 151, 57)',
+                    body_neutral: 'rgb(51, 51, 51)',
+                  },
+                  fontFamily: {
+                    manrop: 'manrop',
+                },
+                backgroundImage: {
+                    leaf1: "url('./images/leaf01.png')",
+                    call_to_action: "url('./images/call.jpg')",
+                    testimonials: "url('./images/testimonials.jpg')",
+                },
+                }
+              }
+            }
+          </script>
+        
+        
+        
+        
+        </head>
+<body>
+
+    <header class="bg-[#111827] text-[#ECF5F8]">
+        <div class="w-11/12 mx-auto">
+            <div class="navbar ">
+                <div class="navbar-start ">
+                  
+                  <div><a href="#"> <img class="" src="./image/icons8-doctor-48.png" alt=""></a></div>
+                  <p><a class="text-2xl font-semibold hover:text-primary transition-colors duration-300 ease-in-out" href="index.html">MediHome</a></p>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal text-xl font-semibold text-white">
+                    <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Home </a></li>
+                    <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Appointment</a></li>
+                    <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Doctors </a></li>
+    
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="lg:flex justify-center items-center gap-4 text-xl  hidden  ">
+    
+                        <div class="w-[42px] h-[42px] rounded-full "  ><a title="admin" href="#"><img class="rounded-full bg-primary" src="./image/admin.png" alt=""></a></div>
+    
+                    <div class="w-[42px] h-[42px] rounded-full " ><a title="user" href="#"><img class="rounded-full bg-primary"  src="./image/user.png" alt=""></a></div>
+                    <div class="w-[42px] h-[42px] rounded-full " ><a title="doctors login" href="#"><img class="rounded-full bg-primary"  src="./image/doctor.png" alt=""></a></div>
+    
+    
+    
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                         <p><i class="fa-solid fa-bars"></i></p>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content  mxt-1 p-2 shadow right-0 pt-10  text-2xl font-bold text-white bg-black rounded-lg  ">
+                          <li class="hover:text-primary transition-colors duration-300 ease-in-out text-lg"><a href="intex.html">Home</a></li>
+                          <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Appointment</a></li>
+                          <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Doctors </a></li>
+                          <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Admin </a></li>
+                          <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Login </a></li>
+                          <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Resister </a></li>
+    
+                        </ul>
+                      </div>
+                 
+                </div>
+              </div>
+        </div>
+    </header>
+    <main class="w-11/12 mx-auto my-20">
+        <div>
+            <h1 class="text-center text-3xl text-green-500">All Doctors Information</h1>
+        </div>
+        <!-- card --> 
+        <div class="grid lg:grid-cols-3 grid-cols-1 gap-8 py-16">
+            <!-- card-1 -->
+             <div>
+
+                <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                    <div>
+                        <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                    </div>
+                    <figure>
+                        <div class="avatar">
+                            <div class="w-24 rounded-full">
+                              <img src="./image/d2.jpeg" />
+                            </div>
+                          </div>
+                    </figure>
+                    <div class="text-start pl-10 space-y-1">
+                     
+                      <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                      <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                      <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                      <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                      <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                      <div class="card-actions justify-between py-5 gap-10 pr-3">
+                        <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                       <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+
+
+               <!-- card-2 -->
+               <div>
+
+                <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                    <div>
+                        <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                    </div>
+                    <figure>
+                        <div class="avatar">
+                            <div class="w-24 rounded-full">
+                              <img src="./image/d2.jpeg" />
+                            </div>
+                          </div>
+                    </figure>
+                    <div class="text-start pl-10 space-y-1">
+                     
+                      <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                      <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                      <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                      <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                      <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                      <div class="card-actions justify-between py-5 gap-10 pr-3">
+                        <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                       <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+
+               <!-- card-3 -->
+               <div>
+
+                <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                    <div>
+                        <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                    </div>
+                    <figure>
+                        <div class="avatar">
+                            <div class="w-24 rounded-full">
+                              <img src="./image/d2.jpeg" />
+                            </div>
+                          </div>
+                    </figure>
+                    <div class="text-start pl-10 space-y-1">
+                     
+                      <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                      <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                      <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                      <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                      <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                      <div class="card-actions justify-between py-5 gap-10 pr-3">
+                        <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                       <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+
+
+               <!-- card-4 -->
+               <div>
+
+                <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                    <div>
+                        <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                    </div>
+                    <figure>
+                        <div class="avatar">
+                            <div class="w-24 rounded-full">
+                              <img src="./image/d2.jpeg" />
+                            </div>
+                          </div>
+                    </figure>
+                    <div class="text-start pl-10 space-y-1">
+                     
+                      <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                      <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                      <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                      <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                      <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                      <div class="card-actions justify-between py-5 gap-10 pr-3">
+                        <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                       <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+
+
+               <!-- card-5 -->
+               <div>
+
+                <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                    <div>
+                        <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                    </div>
+                    <figure>
+                        <div class="avatar">
+                            <div class="w-24 rounded-full">
+                              <img src="./image/d2.jpeg" />
+                            </div>
+                          </div>
+                    </figure>
+                    <div class="text-start pl-10 space-y-1">
+                     
+                      <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                      <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                      <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                      <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                      <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                      <div class="card-actions justify-between py-5 gap-10 pr-3">
+                        <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                       <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+
+
+               <!-- card-6 -->
+               <div>
+
+                <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                    <div>
+                        <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                    </div>
+                    <figure>
+                        <div class="avatar">
+                            <div class="w-24 rounded-full">
+                              <img src="./image/d2.jpeg" />
+                            </div>
+                          </div>
+                    </figure>
+                    <div class="text-start pl-10 space-y-1">
+                     
+                      <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                      <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                      <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                      <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                      <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                      <div class="card-actions justify-between py-5 gap-10 pr-3">
+                        <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                       <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+
+
+
+                  <!-- card-7 -->
+                  <div>
+
+                    <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                        <div>
+                            <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                        </div>
+                        <figure>
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                  <img src="./image/d2.jpeg" />
+                                </div>
+                              </div>
+                        </figure>
+                        <div class="text-start pl-10 space-y-1">
+                         
+                          <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                          <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                          <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                          <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                          <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+    
+    
+    
+                          <div class="card-actions justify-between py-5 gap-10 pr-3">
+                            <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                           <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                          </div>
+                        </div>
+                      </div>
+    
+                 </div>
+
+
+
+
+                      <!-- card-8 -->
+                      <div>
+
+                        <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                            <div>
+                                <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                            </div>
+                            <figure>
+                                <div class="avatar">
+                                    <div class="w-24 rounded-full">
+                                      <img src="./image/d2.jpeg" />
+                                    </div>
+                                  </div>
+                            </figure>
+                            <div class="text-start pl-10 space-y-1">
+                             
+                              <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                              <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                              <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                              <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                              <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+        
+        
+        
+                              <div class="card-actions justify-between py-5 gap-10 pr-3">
+                                <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                               <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                              </div>
+                            </div>
+                          </div>
+        
+                     </div>
+
+
+                  <!-- card-9 -->
+                  <div>
+
+                    <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                        <div>
+                            <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                        </div>
+                        <figure>
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                  <img src="./image/d2.jpeg" />
+                                </div>
+                              </div>
+                        </figure>
+                        <div class="text-start pl-10 space-y-1">
+                         
+                          <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                          <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                          <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                          <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                          <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+    
+    
+    
+                          <div class="card-actions justify-between py-5 gap-10 pr-3">
+                            <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                           <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                          </div>
+                        </div>
+                      </div>
+    
+                 </div>
+
+
+
+                      <!-- card-10 -->
+                      <div>
+
+                        <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                            <div>
+                                <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                            </div>
+                            <figure>
+                                <div class="avatar">
+                                    <div class="w-24 rounded-full">
+                                      <img src="./image/d2.jpeg" />
+                                    </div>
+                                  </div>
+                            </figure>
+                            <div class="text-start pl-10 space-y-1">
+                             
+                              <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                              <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                              <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                              <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                              <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+        
+        
+        
+                              <div class="card-actions justify-between py-5 gap-10 pr-3">
+                                <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                               <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                              </div>
+                            </div>
+                          </div>
+        
+                     </div>
+
+     <!-- card-16 -->
+     <div>
+
+        <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+            <div>
+                <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+            </div>
+            <figure>
+                <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="./image/d2.jpeg" />
+                    </div>
+                  </div>
+            </figure>
+            <div class="text-start pl-10 space-y-1">
+             
+              <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+              <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+              <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+              <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+              <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+              <div class="card-actions justify-between py-5 gap-10 pr-3">
+                <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+               <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+              </div>
+            </div>
+          </div>
+
+     </div>
+
+          <!-- card-17 -->
+          <div>
+
+            <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                <div>
+                    <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                </div>
+                <figure>
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                          <img src="./image/d2.jpeg" />
+                        </div>
+                      </div>
+                </figure>
+                <div class="text-start pl-10 space-y-1">
+                 
+                  <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                  <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                  <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                  <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                  <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                  <div class="card-actions justify-between py-5 gap-10 pr-3">
+                    <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                   <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                  </div>
+                </div>
+              </div>
+
+         </div>
+
+
+              <!-- card-18 -->
+              <div>
+
+                <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                    <div>
+                        <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                    </div>
+                    <figure>
+                        <div class="avatar">
+                            <div class="w-24 rounded-full">
+                              <img src="./image/d2.jpeg" />
+                            </div>
+                          </div>
+                    </figure>
+                    <div class="text-start pl-10 space-y-1">
+                     
+                      <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                      <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                      <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                      <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                      <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                      <div class="card-actions justify-between py-5 gap-10 pr-3">
+                        <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                       <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+     <!-- card-19 -->
+     <div>
+
+        <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+            <div>
+                <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+            </div>
+            <figure>
+                <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="./image/d2.jpeg" />
+                    </div>
+                  </div>
+            </figure>
+            <div class="text-start pl-10 space-y-1">
+             
+              <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+              <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+              <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+              <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+              <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+              <div class="card-actions justify-between py-5 gap-10 pr-3">
+                <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+               <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+              </div>
+            </div>
+          </div>
+
+     </div>
+
+
+          <!-- card-20 -->
+          <div>
+
+            <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                <div>
+                    <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                </div>
+                <figure>
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                          <img src="./image/d2.jpeg" />
+                        </div>
+                      </div>
+                </figure>
+                <div class="text-start pl-10 space-y-1">
+                 
+                  <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                  <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                  <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                  <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                  <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                  <div class="card-actions justify-between py-5 gap-10 pr-3">
+                    <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                   <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                  </div>
+                </div>
+              </div>
+
+         </div>
+
+
+           <!-- card-1 -->
+           <div>
+
+            <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                <div>
+                    <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                </div>
+                <figure>
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                          <img src="./image/d2.jpeg" />
+                        </div>
+                      </div>
+                </figure>
+                <div class="text-start pl-10 space-y-1">
+                 
+                  <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                  <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                  <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                  <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                  <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                  <div class="card-actions justify-between py-5 gap-10 pr-3">
+                    <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                   <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                  </div>
+                </div>
+              </div>
+
+         </div>
+
+
+           <!-- card-2 -->
+           <div>
+
+            <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                <div>
+                    <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                </div>
+                <figure>
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                          <img src="./image/d2.jpeg" />
+                        </div>
+                      </div>
+                </figure>
+                <div class="text-start pl-10 space-y-1">
+                 
+                  <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                  <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                  <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                  <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                  <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                  <div class="card-actions justify-between py-5 gap-10 pr-3">
+                    <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                   <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                  </div>
+                </div>
+              </div>
+
+         </div>
+
+           <!-- card-3 -->
+           <div>
+
+            <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                <div>
+                    <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                </div>
+                <figure>
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                          <img src="./image/d2.jpeg" />
+                        </div>
+                      </div>
+                </figure>
+                <div class="text-start pl-10 space-y-1">
+                 
+                  <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                  <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                  <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                  <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                  <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                  <div class="card-actions justify-between py-5 gap-10 pr-3">
+                    <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                   <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                  </div>
+                </div>
+              </div>
+
+         </div>
+
+           <!-- card-4 -->
+           <div>
+
+            <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                <div>
+                    <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                </div>
+                <figure>
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                          <img src="./image/d2.jpeg" />
+                        </div>
+                      </div>
+                </figure>
+                <div class="text-start pl-10 space-y-1">
+                 
+                  <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                  <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                  <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                  <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                  <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                  <div class="card-actions justify-between py-5 gap-10 pr-3">
+                    <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                   <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                  </div>
+                </div>
+              </div>
+
+         </div>
+
+           <!-- card-5 -->
+           <div>
+
+            <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                <div>
+                    <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                </div>
+                <figure>
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                          <img src="./image/d2.jpeg" />
+                        </div>
+                      </div>
+                </figure>
+                <div class="text-start pl-10 space-y-1">
+                 
+                  <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                  <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                  <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                  <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                  <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                  <div class="card-actions justify-between py-5 gap-10 pr-3">
+                    <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                   <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                  </div>
+                </div>
+              </div>
+
+         </div>
+           <!-- card-6 -->
+           <div>
+
+            <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                <div>
+                    <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                </div>
+                <figure>
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                          <img src="./image/d2.jpeg" />
+                        </div>
+                      </div>
+                </figure>
+                <div class="text-start pl-10 space-y-1">
+                 
+                  <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                  <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                  <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                  <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                  <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                  <div class="card-actions justify-between py-5 gap-10 pr-3">
+                    <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                   <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                  </div>
+                </div>
+              </div>
+
+         </div>
+
+
+
+              <!-- card-7 -->
+              <div>
+
+                <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                    <div>
+                        <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                    </div>
+                    <figure>
+                        <div class="avatar">
+                            <div class="w-24 rounded-full">
+                              <img src="./image/d2.jpeg" />
+                            </div>
+                          </div>
+                    </figure>
+                    <div class="text-start pl-10 space-y-1">
+                     
+                      <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                      <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                      <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                      <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                      <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                      <div class="card-actions justify-between py-5 gap-10 pr-3">
+                        <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                       <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+
+
+
+                  <!-- card-8 -->
+                  <div>
+
+                    <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                        <div>
+                            <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                        </div>
+                        <figure>
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                  <img src="./image/d2.jpeg" />
+                                </div>
+                              </div>
+                        </figure>
+                        <div class="text-start pl-10 space-y-1">
+                         
+                          <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                          <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                          <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                          <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                          <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+    
+    
+    
+                          <div class="card-actions justify-between py-5 gap-10 pr-3">
+                            <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                           <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                          </div>
+                        </div>
+                      </div>
+    
+                 </div>
+
+
+              <!-- card-9 -->
+              <div>
+
+                <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                    <div>
+                        <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                    </div>
+                    <figure>
+                        <div class="avatar">
+                            <div class="w-24 rounded-full">
+                              <img src="./image/d2.jpeg" />
+                            </div>
+                          </div>
+                    </figure>
+                    <div class="text-start pl-10 space-y-1">
+                     
+                      <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                      <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                      <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                      <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                      <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                      <div class="card-actions justify-between py-5 gap-10 pr-3">
+                        <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                       <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+
+
+
+                  <!-- card-10 -->
+                  <div>
+
+                    <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                        <div>
+                            <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                        </div>
+                        <figure>
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                  <img src="./image/d2.jpeg" />
+                                </div>
+                              </div>
+                        </figure>
+                        <div class="text-start pl-10 space-y-1">
+                         
+                          <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                          <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                          <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                          <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                          <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+    
+    
+    
+                          <div class="card-actions justify-between py-5 gap-10 pr-3">
+                            <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                           <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                          </div>
+                        </div>
+                      </div>
+    
+                 </div>
+
+
+ <!-- card-11 -->
+ <div>
+
+    <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+        <div>
+            <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+        </div>
+        <figure>
+            <div class="avatar">
+                <div class="w-24 rounded-full">
+                  <img src="./image/d2.jpeg" />
+                </div>
+              </div>
+        </figure>
+        <div class="text-start pl-10 space-y-1">
+         
+          <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+          <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+          <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+          <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+          <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+          <div class="card-actions justify-between py-5 gap-10 pr-3">
+            <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+           <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+          </div>
+        </div>
+      </div>
+
+ </div>
+
+      <!-- card-12 -->
+      <div>
+
+        <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+            <div>
+                <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+            </div>
+            <figure>
+                <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="./image/d2.jpeg" />
+                    </div>
+                  </div>
+            </figure>
+            <div class="text-start pl-10 space-y-1">
+             
+              <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+              <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+              <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+              <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+              <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+              <div class="card-actions justify-between py-5 gap-10 pr-3">
+                <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+               <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+              </div>
+            </div>
+          </div>
+
+     </div>
+
+
+          <!-- card-13 -->
+          <div>
+
+            <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+                <div>
+                    <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+                </div>
+                <figure>
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                          <img src="./image/d2.jpeg" />
+                        </div>
+                      </div>
+                </figure>
+                <div class="text-start pl-10 space-y-1">
+                 
+                  <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+                  <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+                  <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+                  <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+                  <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+                  <div class="card-actions justify-between py-5 gap-10 pr-3">
+                    <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+                   <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+                  </div>
+                </div>
+              </div>
+
+         </div>
+
+ <!-- card-14 -->
+ <div>
+
+    <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+        <div>
+            <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+        </div>
+        <figure>
+            <div class="avatar">
+                <div class="w-24 rounded-full">
+                  <img src="./image/d2.jpeg" />
+                </div>
+              </div>
+        </figure>
+        <div class="text-start pl-10 space-y-1">
+         
+          <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+          <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+          <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+          <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+          <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+          <div class="card-actions justify-between py-5 gap-10 pr-3">
+            <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+           <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+          </div>
+        </div>
+      </div>
+
+ </div>
+
+
+      <!-- card-15 -->
+      <div>
+
+        <div class="card card-compact  shadow-2xl capitalize text-center space-y-8">
+            <div>
+                <h1 class="text-[#22C56C] text-lg font-semibold pt-3">dr.sumi akter</h1>
+            </div>
+            <figure>
+                <div class="avatar">
+                    <div class="w-24 rounded-full">
+                      <img src="./image/d2.jpeg" />
+                    </div>
+                  </div>
+            </figure>
+            <div class="text-start pl-10 space-y-1">
+             
+              <p><span class="font-bold text-lg">Specialist: </span>Dentistry</p>
+              <p><span class="font-bold text-lg">Experience: </span> 5 Years</p>
+              <p><span class="font-bold text-lg">Age:</span> 45 Years</p>
+              <p><span class="font-bold text-lg">Studied: </span> dmc</p>
+              <p><span class="font-bold text-lg">Fees: </span> 500 -/৳</p>
+
+
+
+              <div class="card-actions justify-between py-5 gap-10 pr-3">
+                <a href="#"> <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500 ">See more</button></a>
+               <a href="#">  <button class="px-6 text-lg text-white py-2 hover:bg-slate-800 rounded-xl bg-slate-500">Appontment</button></a>
+              </div>
+            </div>
+          </div>
+
+     </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <!-- footer -->
+
+
+<div>
+    <footer class="footer footer-center bg-[#111827] text-primary-content p-10">
+        <aside>
+         
+          <p class="font-bold text-4xl text-white ">
+            Download our Health app
+          </p>
+          <p class="text-lg font-semibold text-white">Stay fit. All day, every day.</p>
+        </aside>
+
+        <!-- img -->
+         <div class="flex gap-10">
+            
+            <div class="flex justify-center items-center border border-white p-3 rounded-lg gap-5">
+
+                <div><img src="./image/google.png" alt="" class="w-12 h-12"></div>
+                <div>
+                    <p class="text-[14px] text-white">Download on</p>
+                    <p class="text-lg text-white font-bold">Google Play Store</p>
+                </div>
+            </div>
+
+
+
+            <div class="flex justify-center items-center border border-white p-3 rounded-lg gap-5">
+
+                <div><img src="./image/apple.png" alt="" class="w-12 h-12"></div>
+                <div>
+                    <p class="text-[14px] text-white">Download on</p>
+                    <p class="text-lg text-white font-bold">Apple Store</p>
+                </div>
+            </div>
+           
+ 
+            
+         </div>
+         <footer class="footer footer-center text-white text-base-content p-4">
+            <aside>
+              <p>Copyright ©  All right reserved by MediHome Hospital Ltd</p>
+            </aside>
+          </footer>
+      </footer>
+</div>
+
+    </footer>
+    
+</body>
+</html>
