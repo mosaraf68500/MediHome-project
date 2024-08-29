@@ -110,80 +110,82 @@
         </div>
     </header>
 
-   <section class="bg-slate-200 py-20">
-    
-    <div class="lg:w-2/5 w-11/12 mx-auto py-10 bg-white rounded-xl shadow-lg">
-        <div>
-            <h1 class="text-2xl font-bold text-center">User Login</h1>
-        </div>
+    <main>
 
-    
-        <div class="px-10 space-y-3">
-            <div>
-                <label for="email" class="text-lg">Email:</label> <br> 
-                <input class="border w-full h-[40px] rounded-2xl px-5 bg-slate-100 " type="email" name="" id="" placeholder="Enter Your Email">
-            </div>
-            <div>
-                <label for="password" class="text-lg">Password:</label> <br>
-                <input  class="border w-full h-[40px] rounded-2xl px-5 bg-slate-100 " type="password" name="" id="" placeholder="Password">
-            </div> <br>
+        <section class="py-20">
+            <div class="bg-slate-200 w-11/12 lg:w-2/3 mx-auto  rounded-lg shadow-lg" >
 
-            <div>
-                <button class="w-full h-[40px] bg-[#2563EB] text-white font-bold rounded-xl">Login</button>
-            </div>
-            <div class="text-center">
-                <p>Don't have an account? <a href="register.html" class="text-primary">Register Now</a></p>
-    
-        </div>
-      
-    </div>
-    
-   </section>
+                <h1 class="font-bold text-2xl text-center pt-5">Search for Blood</h1>
+
+                <div class="grid lg:grid-cols-3 grid-cols-1 gap-8  space-y-3 justify-between px-10 pt-10 items-center">
 
 
-   <div>
-    <footer class="footer footer-center bg-[#111827] text-primary-content p-10">
-        <aside>
-         
-          <p class="font-bold lg:text-4xl text-2xl text-white ">
-            Download our Health app
-          </p>
-          <p class="text-lg font-semibold text-white">Stay fit. All day, every day.</p>
-        </aside>
+                    <div>
+                        <label for="dropdown" class="font-semibold">District</label> <br>
+                        <select id="dropdown" name="dropdown"  class="w-full h-[50px] border rounded-xl">
+                            <option value="option1">Select district</option>
+                            <option value="option2">Dhaka</option>
+                            <option value="option3">Rangpur</option>
+                            <option value="option4">Barishal</option>
+                            <option value="option2">Khulna</option>
+                            <option value="option3">Foridpur</option>
+                            <option value="option4">Noakhali</option>
+                        </select>
+                    </div>
 
-        <!-- img -->
-         <div class="flex gap-10">
-            
-            <div class="flex justify-center items-center border border-white p-3 rounded-lg gap-5">
 
-                <div><img src="./image/google.png" alt="" class="w-12 h-12"></div>
-                <div>
-                    <p class="text-[14px] text-white">Download on</p>
-                    <p class="text-lg text-white font-bold">Google Play Store</p>
+
+                    <div>
+                        <label for="dropdown" class="font-semibold">Sub-district</label> <br>
+                        <select id="dropdown" name="dropdown"  class="w-full h-[50px] border rounded-xl">
+                            <option value="option1">Select Sub-district</option>
+                            <option value="option2">Dhaka</option>
+                            <option value="option3">Rangpur</option>
+                            <option value="option4">Barishal</option>
+                            <option value="option2">Khulna</option>
+                            <option value="option3">Foridpur</option>
+                            <option value="option4">Noakhali</option>
+                        </select>
+                    </div>
+
+
+
+
+                    <div>
+                        <label for="dropdown" class="font-semibold">Blood Group</label> <br>
+                        <select id="dropdown" name="dropdown"  class="w-full h-[50px] border rounded-xl">
+                            <option value="option1">Select Blood Group</option>
+                            <option value="option2">A+</option>
+                            <option value="option3">A-</option>
+                            <option value="option4">B+</option>
+
+                            <option value="option2">B-</option>
+                            <option value="option3">O+</option>
+                            <option value="option4">O-</option>
+                            <option value="option2">AB+</option>
+                            <option value="option3">AB-</option>
+                            <option value="option4">B+</option>
+                        </select>
+                    </div>
                 </div>
+                <div class=" p-10">
+                    <button class="btn bg-green-500 text-lg text-white hover:bg-green-700 w-full py-3 rounded-xl">Search</button>
+                    </div>
+    
+
             </div>
+        </section>
+    </main>
 
-
-
-            <div class="flex justify-center items-center border border-white p-3 rounded-lg gap-5">
-
-                <div><img src="./image/apple.png" alt="" class="w-12 h-12"></div>
-                <div>
-                    <p class="text-[14px] text-white">Download on</p>
-                    <p class="text-lg text-white font-bold">Apple Store</p>
-                </div>
-            </div>
-           
  
-            
-         </div>
-         <footer class="footer footer-center text-white text-base-content p-4">
-            <aside>
-              <p>Copyright ©  All right reserved by MediHome Hospital Ltd</p>
-            </aside>
-          </footer>
-      </footer>
-</div>
+
+
+
+
+  
+
+
+ 
 
 </body>
 </html>

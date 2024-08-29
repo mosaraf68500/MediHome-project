@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MediHome Project</title>
+    
+    
+            <!-- google font -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        
+        
+            <!-- font Awesome -->
+        
+            <script src="https://kit.fontawesome.com/ef424ee72d.js" crossorigin="anonymous"></script>
+    
+    
+            <!-- css file -->
+             <link rel="stylesheet" href="styles.css">
+        
+        
+            <!-- DaisyUI and tailwind link -->
+        
+            
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        
+        <!-- customaize code  -->
+        
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    primary: 'rgb(139, 195, 74)',
+                    secondary: 'rgb(17, 17, 17)',
+                    body: 'rgb(248, 246, 243)',
+                    accent: 'rgb(106, 151, 57)',
+                    body_neutral: 'rgb(51, 51, 51)',
+                  },
+                  fontFamily: {
+                    manrop: 'manrop',
+                },
+                backgroundImage: {
+                    leaf1: "url('./images/leaf01.png')",
+                    call_to_action: "url('./images/call.jpg')",
+                    testimonials: "url('./images/testimonials.jpg')",
+                },
+                }
+              }
+            }
+          </script>
+        
+        
+        
+        
+        </head>
+<body>
+
+    
+<header class="bg-[#111827] text-[#ECF5F8]">
+    <div class="w-11/12 mx-auto">
+        <div class="navbar ">
+            <div class="navbar-start ">
+              
+              <div><a href="index.html"> <img class="" src="./image/icons8-doctor-48.png" alt=""></a></div>
+              <p><a class="text-2xl font-semibold hover:text-primary transition-colors duration-300 ease-in-out" href="index.html">MediHome</a></p>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal text-xl font-semibold text-white">
+               <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a href="index.html">Home</a></li>
+                <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a href="appointmanet.html">Appointment</a></li>
+                <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a href="doctors.html"> Doctors</a></li>
+
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="lg:flex justify-center items-center gap-4 text-xl  hidden  ">
+
+                    <div class="w-[42px] h-[42px] rounded-full "  ><a title="admin" href="admin.html"><img class="rounded-full bg-primary" src="./image/admin.png" alt=""></a></div>
+
+                <div class="w-[42px] h-[42px] rounded-full " ><a title="user" href="user.html"><img class="rounded-full bg-primary"  src="./image/user.png" alt=""></a></div>
+                <div class="w-[42px] h-[42px] rounded-full " ><a title="doctors login" href="doctor profile.html"><img class="rounded-full bg-primary"  src="./image/doctor.png" alt=""></a></div>
+
+
+
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                     <p><i class="fa-solid fa-bars"></i></p>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content  mxt-1 p-2 shadow right-0 pt-10  text-2xl font-bold text-white bg-black rounded-lg  ">
+                      <li class="hover:text-primary transition-colors duration-300 ease-in-out text-lg"><a href="intex.html">Home</a></li>
+                      <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Appointment</a></li>
+                      <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Doctors </a></li>
+                      <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Admin </a></li>
+                      <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Login </a></li>
+                      <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Resister </a></li>
+
+                    </ul>
+                  </div>
+             
+            </div>
+          </div>
+    </div>
+</header>
+    
+
+<section class="my-20">
+
+    <div class="lg:w-1/2 w-11/12 mx-auto bg-slate-200 rounded-xl shadow-xl px-10 pb-10 ">
+        <div>
+            <h1 class="text-2xl font-bold text-center py-10">Blood Donation Form</h1>
+        </div>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 justify-start items-center pb-5">
+
+            <div class="flex-1">
+                <label for="name" class=" font-semibold">Name</label> <br>
+                <input class="w-full h-[50px] border rounded-lg" type="text" id="name" name="name" placeholder="" required>
+            </div>
+
+            <div class="flex-1 ">
+                <label for="options" class=" font-semibold">Blood Group</label> <br>
+    <select id="options" name="options" class="w-full h-[50px] border rounded-lg">
+        <option value="option1">Select blood group</option>
+        <option value="option2">O+</option>
+        <option value="option3">O-</option>
+        <option value="option4">A+</option>
+        <option value="option2">A-</option>
+        <option value="option3">B-</option>
+        <option value="option4">B+</option>
+
+        <option value="option2">AB+</option>
+        <option value="option3">AB-</option>
+    </select>
+            </div>
+        </div>
+
+
+
+        <!-- 2 -->
+
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 justify-start items-center pb-5">
+
+            <div class="flex-1">
+                <label for="name" class=" font-semibold">Address</label> <br>
+                <input class="w-full h-[50px] border rounded-lg" type="text" id="name" name="name" placeholder="" required>
+            </div>
+
+            <div class="flex-1 ">
+                
+                <label for="name" class=" font-semibold">Phone</label> <br>
+                <input class="w-full h-[50px] border rounded-lg" type="text" id="name" name="name" placeholder="" required>
+            </div>
+        </div>
+
+
+        <!-- 3 -->
+
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 justify-start items-center pb-5">
+
+            <div class="flex-1">
+                 <label for="options" class=" font-semibold">District (Zela)</label> <br>
+    <select id="options" name="options"  class="w-full h-[50px] border rounded-lg">
+        <option value="option1" class="px-5">Select District</option>
+        <option value="option2">Dhaka</option>
+        <option value="option3">Rangpur</option>
+        <option value="option4">Khulna</option>
+        <option value="option2">Barishal</option>
+        <option value="option3">Foridpur</option>
+        <option value="option4">Rajshahi</option>
+
+     
+    </select>
+            </div>
+
+            <div class="flex-1 ">
+                <label for="options" class=" font-semibold">Sub-district (Upzela)</label> <br>
+    <select id="options" name="options"  class="w-full h-[50px] border rounded-lg">
+        <option value="option1" class="px-5">Sub-district </option>
+        <option value="option2">Dhaka</option>
+        <option value="option3">Rangpur</option>
+        <option value="option4">Khulna</option>
+        <option value="option2">Barishal</option>
+        <option value="option3">Foridpur</option>
+        <option value="option4">Rajshahi</option>
+
+     
+    </select>
+            </div>
+        </div>
+
+
+
+        <!-- 4 -->
+
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 justify-start items-center pb-5">
+
+            <div class="flex-1">
+                <label for="weight" class="font-semibold"> Age</label> <br>
+                <input class="w-full h-[50px] border rounded-lg" type="number" id="weight" name="weight" min="0" max="300" step="1">
+                
+            </div>
+
+            <div class="flex-1 ">
+                <label for="weight" class="font-semibold"> Weight (kg)</label> <br>
+                <input class="w-full h-[50px] border rounded-lg" type="number" id="weight" name="weight" min="0" max="300" step="1">
+            </div>
+        </div>
+
+        <!-- 5 -->
+
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 justify-start items-center pb-5">
+
+            <div class="flex-1">
+                <label for="dob" class="font-semibold">Last Donation Date</label>
+                <input  class="w-full h-[50px] border rounded-lg px-5" type="date" id="dob" name="dob">
+            </div>
+
+            <div class="flex-1 ">
+                <label for="options" class=" font-semibold">Physical Problem</label> <br>
+    <select id="options" name="options" class="w-full h-[50px] border rounded-lg px-5">
+        
+        <option value="option2">Yes</option>
+        <option value="option3">No</option>
+    </select>
+            </div>
+        </div>
+
+        <div>
+            <button type="submit" class="w-full h-[50px] bg-green-500 text-white rounded-lg font-bold  px-10 text-center">Submit</button>
+        </div>
+    </div>
+</section>
+</body>
+</html>
