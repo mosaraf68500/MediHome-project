@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediHome Project</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font Awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/ef424ee72d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- DaisyUI and tailwind link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- customaize code  -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "rgb(139, 195, 74)",
+              secondary: "rgb(17, 17, 17)",
+              body: "rgb(248, 246, 243)",
+              accent: "rgb(106, 151, 57)",
+              body_neutral: "rgb(51, 51, 51)",
+            },
+            fontFamily: {
+              manrop: "manrop",
+            },
+            backgroundImage: {
+              leaf1: "url('./images/leaf01.png')",
+              call_to_action: "url('./images/call.jpg')",
+              testimonials: "url('./images/testimonials.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <header class="bg-[#111827] text-[#ECF5F8]">
+      <div class="w-11/12 mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div>
+              <a href="index.html">
+                <img class="" src="./image/icons8-doctor-48.png" alt=""
+              /></a>
+            </div>
+            <p>
+              <a
+                class="text-2xl font-semibold hover:text-primary transition-colors duration-300 ease-in-out"
+                href="index.html"
+                >MediHome</a
+              >
+            </p>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal text-xl font-semibold text-white">
+              <li
+                class="hover:text-primary transition-colors duration-300 ease-in-out"
+              >
+                <a href="index.html">Home</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors duration-300 ease-in-out"
+              >
+                <a href="appointmanet.html">Appointment</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors duration-300 ease-in-out"
+              >
+                <a href="doctors.html"> Doctors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div
+              class="lg:flex justify-center items-center gap-4 text-xl hidden"
+            >
+              <div class="w-[42px] h-[42px] rounded-full">
+                <a title="admin" href="admin.html"
+                  ><img
+                    class="rounded-full bg-primary"
+                    src="./image/admin.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="w-[42px] h-[42px] rounded-full">
+                <a title="user" href="user.html"
+                  ><img
+                    class="rounded-full bg-primary"
+                    src="./image/user.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="w-[42px] h-[42px] rounded-full">
+                <a title="doctors login" href="doctor profile.html"
+                  ><img
+                    class="rounded-full bg-primary"
+                    src="./image/doctor.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <p><i class="fa-solid fa-bars"></i></p>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mxt-1 p-2 shadow right-0 pt-10 text-2xl font-bold text-white bg-black rounded-lg"
+              >
+                <li
+                  class="hover:text-primary transition-colors duration-300 ease-in-out text-lg"
+                >
+                  <a href="intex.html">Home</a>
+                </li>
+                <li
+                  class="hover:text-primary transition-colors duration-300 ease-in-out"
+                >
+                  <a>Appointment</a>
+                </li>
+                <li
+                  class="hover:text-primary transition-colors duration-300 ease-in-out"
+                >
+                  <a>Doctors </a>
+                </li>
+                <li
+                  class="hover:text-primary transition-colors duration-300 ease-in-out"
+                >
+                  <a>Admin </a>
+                </li>
+                <li
+                  class="hover:text-primary transition-colors duration-300 ease-in-out"
+                >
+                  <a>Login </a>
+                </li>
+                <li
+                  class="hover:text-primary transition-colors duration-300 ease-in-out"
+                >
+                  <a>Resister </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- section -->
+
+    <section class="bg-slate-200 py-20">
+        <div  class=" flex items-center justify-center min-h-screen">
+
+            <div class="bg-white shadow-2xl rounded-xl p-8 max-w-md w-full">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">Register</h2>
+                <form>
+                    <!-- Name -->
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full bg-slate-100 px-4 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your full name" required>
+                    </div>
+        
+                    <!-- Email -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full bg-slate-100 px-4 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your email" required>
+                    </div>
+        
+                    <!-- Password -->
+                    <div class="mb-4">
+                        <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+                        <input type="password" id="password" name="password" class="w-full bg-slate-100 px-4 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Create a password" required>
+                    </div>
+        
+                    <!-- Confirm Password -->
+                    <div class="mb-6">
+                        <label for="confirm-password" class="block text-gray-700 font-medium mb-2">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" class="w-full bg-slate-100 px-4 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Confirm your password" required>
+                    </div>
+        
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-blue-500 text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Register</button>
+                </form>
+        
+                <!-- Already have an account -->
+                <p class="text-center text-gray-600 text-sm mt-4">
+                    Already have an account? <a href="#" class="text-blue-500 hover:underline">Login here</a>
+                </p>
+            </div>
+        
+        </div>
+        
+    
+    
+    </section>
+  </body>
+</html>
